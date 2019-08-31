@@ -40,7 +40,7 @@ double PID::TotalError() {
   if(alpha > 1){
     alpha = 1;
   }
-  if (alpha < - 1){
+  if (alpha < -1){
     alpha = -1;
   }
   return alpha; // TODO: Add your total error calc here!
