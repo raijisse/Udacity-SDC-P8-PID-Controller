@@ -58,6 +58,7 @@ I used trial and error to tune the parameters, although twiddle can be used. I f
 
 
 ## Result
-Overall, there was a pretty wide range of parameters that were able to drive the car around the track, some with a bit more of an oscillating trajectory, others a bit smoother. I chose final parameters `Kp` to be 0.125, `Ki` to be 0.0009 and `Kd` to be 1.8. There parameters gave me the results I was satisfied the most with. I noticed that the car tends to get close to the end of the lane but had smoother correction compared to other sets of parameters.
+Overall, there was a pretty wide range of parameters that were able to drive the car around the track, some with a bit more of an oscillating trajectory, others a bit smoother. I chose final parameters `Kp` to be 0.125, `Ki` to be 0.0009 and `Kd` to be 1.8. These parameters gave me the results I was satisfied the most with. I noticed that the car tends to get close to the border of the lane but had smoother correction compared to other sets of parameters.
 
-Many improvement could be done such as using another PID to control throttle and adapt throttle and speed depending on the turn angle. This could reduce speed in tight curves so that the PID controller suffer less of lagged decision and trying to overcorrect a bit late. 
+A first method to improve my results would be to use the twiddle method to find optimal parameters. However, there are other axis of improvement.
+For instance, we could be done such as using another PID to control throttle and adapt throttle and speed depending on the turn angle. This could reduce speed in tight curves so that the PID controller suffer less of lagged decision and trying to overcorrect a bit late. 
